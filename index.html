@@ -18,6 +18,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <div class="weather-app-wrapper">
         <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-6">
@@ -47,17 +48,21 @@
             </div>
           </div>
         </form>
+        <div class="overview">
         <h1 id="city"></h1>
         <ul>
-          <li id="date"></li>
+          <li> Last updated: <span id="date"></span></li>
           <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
+              <img src="" alt="Clear" id="icon" class="float-left" />
               <div class="float-left">
-                <span class="temperature" id="temperature"></span
-                ><span class="units">°C</span>
+                <strong id="temperature"></strong>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span>
               </div>
             </div>
           </div>
@@ -66,12 +71,14 @@
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
-          </div>
         </div>
       </div>
     </div>
-    <small style="text-align: center"><a href="https://github.com/Nolanga" target="_blank">Open-source code</a>, by Nomthandazo Langa</small>
-</div>
+    <small>
+      <a
+      href="https://github.com/Nolanga/my-weather-hwork" target="_blank">Open-source code</a>, by Nomthandazo Langa</small>
+    </div>
+  </div>
     <script src="src/script.js"></script>
   </body>
 </html>
